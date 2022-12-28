@@ -1,0 +1,9 @@
+# Write a python program to find all null values in a given dataset and remove them.
+
+
+import pandas as pd
+result=pd.read_csv("result.csv")
+print(result)
+// To count null values we can use sum function
+print(result.isnull().sum())
+result.dropna()
